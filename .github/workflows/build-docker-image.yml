@@ -39,7 +39,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          # images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: "ghcr.io/yude/耳かき・犬吸い・寝息】やおよろ温泉郷-〜犬神くおんの甘えたい気持ちが隠せない一生懸命な優勝ご奉仕～【CV.前田佳織里】"
 
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
